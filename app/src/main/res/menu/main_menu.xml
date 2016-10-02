@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fangzheng.wolfutils.toolbar.ToolBarActivity" >
+
+    <item
+        android:id="@+id/menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"
+        android:title="搜索"
+        ></item>
+
+    <item
+        android:id="@+id/menu_share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        android:icon="@drawable/social_share"
+        app:showAsAction="never"
+        android:title="分享"
+        ></item>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings"
+        app:showAsAction="never"
+        android:title="设置">
+    </item>
+
+</menu>

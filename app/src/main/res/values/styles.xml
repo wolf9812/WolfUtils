@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#4876FF</item>
+        <item name="colorPrimaryDark">#3A5FCD</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/CustomMenuStyle</item>
+    </style>
+
+
+    <!--自定义菜单栏弹出的样式-->
+    <style name="CustomMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <!--
+            弹出菜单背景色
+            <item name="android:popupBackground"></item>
+            弹出菜单与标题栏的垂直间距
+            <item name="android:dropDownVerticalOffset">0dip</item>
+        -->
+    </style>
+</resources>
