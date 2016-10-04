@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".toolbar.ToolBarActivity" />
-        <activity android:name=".layout.RelativeLayoutActivity"></activity>
+        <activity android:name=".layout.RelativeLayoutActivity" />
+        <activity android:name=".layout.FrameLayoutDemoActivity" />
+        <activity android:name=".widget.AutoCompleteTextViewActivity"></activity>
     </application>
 
 </manifest>

@@ -9,8 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.fangzheng.wolfutils.layout.FrameLayoutDemoActivity;
 import com.fangzheng.wolfutils.layout.RelativeLayoutActivity;
 import com.fangzheng.wolfutils.toolbar.ToolBarActivity;
+import com.fangzheng.wolfutils.widget.AutoCompleteTextViewActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item);
         adapter.add("Toolbar activity");
         adapter.add("Relative layout activity");
+        adapter.add("Frame layout activity");
+
+        adapter.add("Common widget");
+
         mListView.setAdapter(adapter);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -39,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(MainActivity.this, RelativeLayoutActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(MainActivity.this, FrameLayoutDemoActivity.class);
+                        break;
+                    case 3:
+                        intent = new Intent(MainActivity.this, AutoCompleteTextViewActivity.class);
                         break;
                     default:
                         break;
