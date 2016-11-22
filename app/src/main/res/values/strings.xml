@@ -6,4 +6,7 @@
     <string name="btn_register">register</string>
 
     <string name="check_box_save_password">记住密码</string>
+
+    <string name="user_name_hint">用户名</string>
+    <string name="user_password_hint">密 码</string>
 </resources>

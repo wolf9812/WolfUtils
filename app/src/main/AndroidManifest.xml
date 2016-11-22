@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fangzheng.wolfutils">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +24,22 @@
         <activity android:name=".toolbar.ToolBarActivity" />
         <activity android:name=".layout.RelativeLayoutActivity" />
         <activity android:name=".layout.FrameLayoutDemoActivity" />
-        <activity android:name=".widget.AutoCompleteTextViewActivity"></activity>
+        <activity android:name=".widget.AutoCompleteTextViewActivity" />
+        <activity android:name=".media.AudioActivity" />
+        <activity android:name=".permission.PermissionApplyActivity" />
+        <activity android:name=".orientation.AActivity" />
+
+        <!-- configChanges很重要，orientation必须结合screenSize才起作用 -->
+        <activity
+            android:name=".orientation.BActivity"
+            android:configChanges="orientation|screenSize|layoutDirection|keyboard|keyboardHidden"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".launch_mode.LaunchModeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".launch_mode.TempActivity" />
+        <activity android:name=".listview.ListViewActivity"></activity>
+
     </application>
 
 </manifest>
