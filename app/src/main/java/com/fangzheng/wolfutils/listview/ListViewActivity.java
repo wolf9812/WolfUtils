@@ -16,9 +16,9 @@ import java.util.List;
 
 public class ListViewActivity extends AppCompatActivity {
 
-    List<Object> datas;
-    MessageAdapter messageAdapter;
-    ListView listView;
+    private List<Object> datas;
+    private MessageAdapter messageAdapter;
+    private ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
